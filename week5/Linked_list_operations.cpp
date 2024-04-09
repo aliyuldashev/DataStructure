@@ -85,22 +85,16 @@ int main(){
     fourth->nextdata = NULL;
 
     start = first;
-//    Insert_beginig(&start,first);
-//    Insert_mid( &start,second);
-//    Insert_end(&start);
-
-    cout<< "\nFarword: "<<"\t";
-
+    cout<< "\nBefore: "<<"\t";
     while(start!= NULL){
         cout << start->data<<"\t";
         start = start->nextdata;
     }
     start = first;
-//    delete_beginning(&start);
-//    delete_mid(&start,third);
-//    delete_end(&start);
+    delete_end(&start);
 
-    cout<< "\nFarword: "<<"\t";
+
+    cout<< "\nAfter:   "<<"\t";
     while(start!= NULL){
         cout << start->data<<"\t";
         start = start->nextdata;
