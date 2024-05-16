@@ -52,15 +52,12 @@ Node* settree() {
 
 int main() {
     Node* root = settree();
-
     cout << "Inorder traversal: ";
     inorder(root);
     cout << endl;
-
     cout << "Preorder traversal: ";
     preorder(root);
     cout << endl;
-
     cout << "Postorder traversal: ";
     postorder(root);
     cout << endl;
